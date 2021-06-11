@@ -120,9 +120,7 @@
                 <tr>
                     <td>
                         <strong>
-                            <a href="{% abseventurl o.event "presale:event.order" order=o.code secret=o.secret %}" target="_blank">
-                                {{ o.code }}
-                            </a>
+                            <a href="{% abseventurl o.event "presale:event.order" order=o.code secret=o.secret %}" target="_blank">{{ o.code }}</a>
                         </strong>
                         {% if o.testmode %}
                             <span class="label label-warning">{% trans "TEST MODE" %}</span>
